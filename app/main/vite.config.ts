@@ -3,10 +3,12 @@ import { resolve } from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vitest/config'
 import path from 'path'
+import i18nReplace from './scripts/vite-plugin-i18n-replace.mjs'
 
 // See https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
+		i18nReplace(),
 		vue(),
 		// See https://github.com/unplugin/unplugin-auto-import
 		AutoImport({
