@@ -127,7 +127,6 @@ jobs:
         with:
           tag_name: ${{ steps.release_tag.outputs.tag }}
           draft: true
-          token: ${{ secrets.GH_PAT_RELEASE_ACCESS }}
           files: |
             ${{ github.workspace }}/${{ matrix.target_path }}/src-tauri/target/release/bundle/**/*.AppImage
             ${{ github.workspace }}/${{ matrix.target_path }}/src-tauri/target/release/bundle/**/*.deb
@@ -140,7 +139,6 @@ jobs:
         with:
           tag_name: ${{ steps.release_tag.outputs.tag }}
           draft: true
-          token: ${{ secrets.GH_PAT_RELEASE_ACCESS }}
           files: |
             ${{ github.workspace }}/${{ matrix.target_path }}/src-tauri/target/release/bundle/**/*.dmg
           fail_on_unmatched_files: false
@@ -151,7 +149,6 @@ jobs:
         with:
           tag_name: ${{ steps.release_tag.outputs.tag }}
           draft: true
-          token: ${{ secrets.GH_PAT_RELEASE_ACCESS }}
           files: |
             ${{ github.workspace }}/${{ matrix.target_path }}/src-tauri/target/release/bundle/msi/*.msi
             ${{ github.workspace }}/${{ matrix.target_path }}/src-tauri/target/release/bundle/nsis/*.exe
