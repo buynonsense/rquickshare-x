@@ -69,8 +69,7 @@ const pluralize = (n: number, s: string) => n === 1 ? s : `${s}s`;
 			</p>
 
 			<p class="text-xs mt-3">
-				Make sure both devices are unlocked, close together, and have bluetooth turned on. Device you're sharing with need
-				Quick Share turned on and visible to you.
+				Make sure both devices are unlocked, close together, and have bluetooth turned on. Device you're sharing with need Quick Share turned on and visible to you.
 			</p>
 		</div>
 

@@ -65,7 +65,7 @@
 
 						<div v-else-if="item.state === 'Finished'">
 							<p class="mt-2">
-								Received <span v-if="item.text_type">text</span>
+								Received <span v-if="item.text_type">文本</span>
 							</p>
 
 							<!-- If files -->
